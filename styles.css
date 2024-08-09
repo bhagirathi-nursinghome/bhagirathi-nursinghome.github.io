@@ -1,5 +1,5 @@
 /* Basic Reset */
-body, h1, h2, button {
+body, h1, h2, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -43,11 +43,34 @@ main {
     grid-gap: 10px;
 }
 
+.button-row {
+    display: contents;
+}
+
+.row1 .grid-button {
+    background-color: #3498db; /* Blue */
+}
+
+.row2 .grid-button {
+    background-color: #e74c3c; /* Red */
+}
+
+.row3 .grid-button {
+    background-color: #2ecc71; /* Green */
+}
+
+.row4 .grid-button {
+    background-color: #f39c12; /* Orange */
+}
+
 .grid-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
-    background-color: #3498db;
     color: #fff;
+    text-decoration: none;
     border: none;
     border-radius: 8px;
     font-size: 1.2em;
@@ -56,7 +79,7 @@ main {
 }
 
 .grid-button:hover {
-    background-color: #2980b9;
+    filter: brightness(85%);
     transform: scale(1.05);
 }
 
